@@ -25,7 +25,7 @@
     }
   },
   "Item": {
-    "types": ["item", "advance", "ability", "skill"],
+    "types": ["item", "power", "trait", "feat"],
     "templates": {
       "base": {
         "description": ""
@@ -33,16 +33,16 @@
     },
     "item": {
       "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "quantity": 1
     },
-    "feature": {
+    "power": {
       "templates": ["base"]
     },
-    "spell": {
-      "templates": ["base"],
-      "spellLevel": 1
+    "trait": {
+      "templates": ["base"]
+    },
+    "feat": {
+      "templates": ["base"]
     }
   }
 }
